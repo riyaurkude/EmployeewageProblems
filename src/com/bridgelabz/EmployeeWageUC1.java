@@ -4,7 +4,7 @@ public class EmployeeWageUC1 {
 
 	public static void main(String[] args)
 	{
-		//uc4
+		//UC5
 		int IS_FULL_TIME = 1;
 		int EMP_RATE_PER_HOUR = 20;
 		int IS_PART_TIME_HOUR = 8;
@@ -26,12 +26,16 @@ public class EmployeeWageUC1 {
 			default:
 				empHrs = 0;
 				break;
-				}
-		
-				empWage = empHrs *  EMP_RATE_PER_HOUR;
-				System.out.println("The employee wage for "+empHrs+" is:" + empWage);
 		}
-		
+		 empWage = empHrs * EMP_RATE_PER_HOUR ;
+		 int totalwage=0;
+		for (int day = 1; day <= 20; day++) 
+		{
+			totalwage=totalwage+empWage;
+		}
+		System.out.println("Total_empHrs " + empHrs + " Employee Monthly Wage " + totalwage);
+	}
+
 
 }
 
